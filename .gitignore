@@ -1,0 +1,13 @@
+# git add -A;git commit -m 'yandex-init';git push https://github.com/QGB/yandex master
+.idea
+.DS_Store
+venv
+Thumbs.db
+__pycache__
+*.pyc
+*.txt
+
+.9t-
+.9t.
+
+yandex.deb
