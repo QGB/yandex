@@ -3,6 +3,8 @@
 Yandex Browser via VNC
 ==
 `docker run -p 127.0.0.1:5900:5900 qgbcs/yandex`
+if you want save user-data in docker:
+  ` docker run -v ~/chrome:/home/chrome -p 127.0.0.1:5900:5900 -e VNC_SCREEN_SIZE=1366x768 yandex`
 
  - Yandex Browser, not Chromium, for the ease of Flash plugin management
  - on Xvfb, with FluxBox (no window decorations)
@@ -37,6 +39,13 @@ Yandex は英語版ですが、Web ページ用の日本語フォントは含ま
 Yandex Updates
 --
 It is recommended to `docker pull qgbcs/yandex` and restart the container once in a while to update Yandex & crd inside (they will not get automatically updated). Optionally you can run `docker exec <Yandex-container> update` to upgrade only Yandex-stable from outside the container (exit Yandex inside CRD after upgrading).
+
+Build
+==
+1. `https://github.com/QGB/yandex`
+2. `cd yandex`
+3. download `yandex.deb` from https://browser.yandex.com/
+3. `docker build`
 
   [1]: https://www.google.com/intl/en/chrome/browser/privacy/eula_text.html
   [2]: https://code.google.com/p/chromium/issues/detail?id=490964

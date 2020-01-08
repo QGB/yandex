@@ -49,9 +49,5 @@ VOLUME ["/home/chrome"]
 
 EXPOSE 5900
 
-#ENTRYPOINT ["/bin/bash" ]
-#CMD ["/bin/bash" ]
 ENTRYPOINT ["/bin/bash", "/entrypoint.sh"]
 CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/conf.d/supervisord.conf"]
-
-#ENTRYPOINT ["/usr/bin/yandex-browser", "--window-size=1366,768", "--user-data-dir", "--no-sandbox", "--window-position=0,0", "--force-device-scale-factor=1"]
