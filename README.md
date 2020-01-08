@@ -42,7 +42,7 @@ It is recommended to `docker pull qgbcs/yandex` and restart the container once i
 
 Build
 ==
-1. `https://github.com/QGB/yandex`
+1. `git clone https://github.com/QGB/yandex`
 2. `cd yandex`
 3. download `yandex.deb` from https://browser.yandex.com/
 3. `docker build`
