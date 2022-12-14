@@ -18,9 +18,9 @@ RUN sed -i 's/archive.ubuntu.com/mirrors.ustc.edu.cn/g' /etc/apt/sources.list &&
  fonts-arphic-uming 
  
 
-COPY yandex.deb	/tmp/yandex.deb
+COPY Yandex.deb	/tmp/Yandex.deb
 
-RUN gdebi --non-interactive /tmp/yandex.deb
+RUN gdebi --non-interactive /tmp/Yandex.deb
 
 RUN apt-get install -y xvfb tmux htop vim lsof
 
