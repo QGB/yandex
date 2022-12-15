@@ -45,7 +45,8 @@ Build
 1. `git clone https://github.com/QGB/yandex`
 2. `cd yandex`
 3. download `yandex.deb` from https://browser.yandex.com/
-3. `docker build`
+3. `docker build --tag yandex:1.0 .`  
+4. `sudo docker run -p 127.0.0.1:5900:5900 --name yandex -d yandex:1.0`  
 
   [1]: https://www.google.com/intl/en/chrome/browser/privacy/eula_text.html
   [2]: https://code.google.com/p/chromium/issues/detail?id=490964
